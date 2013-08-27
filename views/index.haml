@@ -1,0 +1,9 @@
+.main
+  %form{ action: '/', method: 'GET' }
+    %label{ for: 'oauth_key' } OAuth Key:
+    %input{ type: 'text', id: 'oauth_key', name: 'oauth_key' }
+    %label{ for: 'oauth_secret' } OAuth Secret:
+    %input{ type: 'text', id: 'oauth_secret', name: 'oauth_secret' }
+    .actions
+      %button{ type: 'submit' } Get Header
+  = @oauth_header
